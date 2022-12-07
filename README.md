@@ -7,4 +7,4 @@ Tenemos diferentes ejemplos para acceder al diccionario:
 - Haciendo una petición con fetch y leyendo un archivo JSON (leerDiccionarioJson.html y leerDiccionarioJson.js que leen diccionario.json).
 
 Una vez leído diccionario, podemos usar los métodos de los arrays para buscar palabras, por ejemplo:
-diccionario.includes('palabra') devolverá true cuando 'palabra' está en el array diccionario.
+diccionario.includes('palabra') devolverá true cuando 'palabra' esté en el array diccionario.
