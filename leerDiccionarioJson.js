@@ -7,7 +7,7 @@ async function leeDiccionario(callBack){
     const diccionario = await respuesta.json();
     // console.log(diccionario);
     // console.log("¿patata está en el diccionario? ", diccionario.includes('patata'));
-    if (callBack)
+    if (callBack && typeof callBack === 'function')
         callBack(diccionario);
 }
 
