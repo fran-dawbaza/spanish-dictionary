@@ -12,7 +12,7 @@ diccionario.includes('palabra') devolverá true cuando 'palabra' esté en el arr
 En comparaHasIncludesForOf.js tenemos una comparación para búsquedas en Array y en Set, sería buena idea transformar el diccionario en un objeto de tipo Set para obtener mejor eficiencia en búsquedas.
 
 También sería adecuado hacer búsquedas sin tener en cuenta tíldes cuando sea necesario, para ello tendríamos que transformar el diccionario previamente, ejemplo:
-code
+```
 // Elimina los diacríticos de un texto excepto si es una "ñ" (ES6)
 //
 function eliminarDiacriticosEs(texto) {
@@ -21,4 +21,4 @@ function eliminarDiacriticosEs(texto) {
            .replace(/([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi,"$1")
            .normalize();
 }
-/code
+```
